@@ -2,7 +2,7 @@ import os
 import cv2
 import pytest
 import sys
-sys.path.append('./')
+
 from ntt.frames.frame_extraction import extract_first_frame
 
 def test_extract_first_frame():

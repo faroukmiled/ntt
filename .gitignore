@@ -1,3 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
+# Distribution / packaging
+./build/
+dist/
+
+# Environments
+.venv
+.env
+venv/
+
+# IDE specific
+*~
+
+# OS specific
 *.DS_Store
-*.pyc
+
+# To put some untracked file without bothering Flit
+tmp_flit/
