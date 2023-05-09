@@ -14,8 +14,8 @@ $ pip install --upgrade pip setuptools wheel
 
 ## Install pip-tools dependency management tool
 
-Install [pip-tools](https://pypi.org/project/pip-tools/) is a tool which
-computes dependencies and install packages.
+[pip-tools](https://pypi.org/project/pip-tools/) is a tool which computes
+dependencies and install packages.
 
 [pipdeptree](https://github.com/tox-dev/pipdeptree) is optional. It is a
 command-line tool that display dependency trees.
@@ -46,6 +46,9 @@ documentation tool and its extensions, ...
 $ pip-compile --resolver=backtracking requirements-dev.in
 ```
 
+`pip-compile` will generate a `.txt` file with the same base name as the `.in`
+file.
+
 ## Install ntt package with its optional dependencies
 
 You probably want to install ntt with its optional "dev" dependencies. So once
@@ -53,7 +56,7 @@ the dependencies computed, you have to install them in your environment with
 `pip-sync`.
 
 ```bash
-$ pip-sync requirements-dev.in
+$ pip-sync requirements-dev.txt
 ```
 
 ## Test your installation
@@ -80,3 +83,5 @@ You must have installed "dev" optional dependencies to have flit. Just run
 ```bash
 $ flit build
 ```
+
+
