@@ -9,6 +9,7 @@ def extract_first_frame(video_path_in, video_name_in, frame_path_out, frame_name
 
     video_name = os.path.join(video_path_in, video_name_in)
     frame_name = os.path.join(frame_path_out, frame_name_out)
+    print(video_name)
 
     vidcap = cv2.VideoCapture(video_name)
     success, image = vidcap.read()
